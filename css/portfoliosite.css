@@ -172,7 +172,7 @@ margin-left: -1.2em
 
 
 article {
-    margin: 170px;
+    margin: 0 170px 170px 170px;
     border-left: 1 solid gray;
     padding: 1em;
     overflow: hidden;
