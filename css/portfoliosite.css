@@ -1,0 +1,458 @@
+<style>
+
+body {
+    font-family: 'Raleway', sans-serif;     border: 10px solid #E3BCBC;
+}
+
+html,
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+div.container {
+    width: 100%;
+  
+}
+    
+  .img {
+    
+/*
+margin-left: -.75em;
+   padding-right: 1em;
+        padding-top: 0em;
+            float:left;
+      */
+    margin-top: 5em;
+    /*  margin-left: 28em;
+*/
+      
+}
+
+.position {
+    
+/*    margin-top: 20em; */
+    
+    
+    
+}
+      
+.img2 {
+    padding-top: 0em;
+    float:left;
+    
+    
+}
+
+
+    
+    
+}
+h1, h2, h3, nav, footer, p {font-family: 'Raleway', sans-serif;}
+
+h2,h3 {text-align: center;}
+
+header, footer {
+    padding: 1em;
+    color: #E3BCBC;
+    background-color: white;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+} 
+
+
+
+
+.white {color:white;}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 5em;
+/*    margin-left: 16.5em;*/
+}
+
+#nav-pos {
+width:100%;
+margin:0 auto;
+    padding: 0;
+list-style:none;
+    text-align: center;
+  
+}
+#nav-pos li {
+/*float:left;*/
+    display: inline-block;
+    
+margin-left: 7.em;
+}
+
+#nav-pos a {
+display:block;
+text-align:center;
+width:100px; /* fixed width */
+text-decoration:none; 
+padding: 16px;
+color: #E3BCBC;
+    
+}
+
+#nav-pos a:hover { color: #98A1B7;}
+
+#work {margin: 0 a}
+
+.contact {color: white;
+           margin-bottom: 30px}
+
+hr {border: 1px solid white;
+    margin-bottom: 30px}
+
+footer {background-color: #E3BCBC; text-align: center;}
+    
+ footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+footer li {
+    float: left;
+}
+
+footer li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: ;
+}
+
+footer li a:hover {
+   
+    color: #E3BCBC;
+}
+
+#foot-pos {
+width:100%;
+margin:0 auto;
+list-style:none;
+    
+}
+
+.social {
+margin: 0 auto;
+margin-left: 300px;    
+}
+
+
+#foot-pos li {
+float:left;
+}
+#foot-pos a {
+display:block;
+text-align:center;
+width:150px; /* fixed width */
+text-decoration:none; 
+padding: 15px;
+color:clear;
+margin-left: -1.2em
+}
+
+
+
+article {
+    margin: 170px;
+    border-left: 1 solid gray;
+    padding: 1em;
+    overflow: hidden;
+    color: #E3BCBC;
+    padding-bottom: 2em
+    
+}
+
+  .about {
+   margin-top: -0px;
+  align-items: center;      
+      }  
+    
+
+.spacing { 
+    margin-bottom: 2em;
+}
+
+.font {
+    font:"https://fonts.googleapis.com/css?family=Raleway"; 
+
+}
+
+.me {
+    align-content: center;
+    
+}
+    h1 {display: none;}
+    
+    #logo {width: 300px; height: 300px; margin: 0 auto;}
+
+.clear {clear: both;}
+.portfolio {
+    padding-top: 40px;
+}
+.lightbox
+{
+  text-align: center;
+    align-items: center;
+
+}
+.thumbnails h2 {
+/*    display: none;*/
+/*    opacity: 0;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.thumbnails li
+{
+  display: inline-block;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  padding-left: 1.40em; 
+  margin-top: 45px;
+/*    position: relative;*/
+/*    margin-bottom: 50px*/
+    
+}
+.thumbnails a
+{
+    position: relative;
+/*    margin-bottom: 50px*/
+    
+}
+.thumbnails a img,
+.thumbnails a h2 {
+    transition: all ease-in-out 0.5s;
+}
+.thumbnails a:hover img {
+    opacity: 0.3;
+}
+.thumbnails a:hover h2 {
+    opacity: 1;
+}
+.thumbnail
+{
+  width: 220px;
+  height: 220px;
+    margin: -10px;
+}
+.image
+{
+  display: none;
+}
+.image:target
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.image:target img
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  margin-top: -200px;
+  margin-left: -200px;
+  width: 400px;
+  height: 400px;
+  box-shadow: black 0 0 10px;
+}
+.image:target .close
+{
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  content: "";
+}
+.image:target .next, .image:target .previous
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  display: block;
+  margin-top: -200px;
+  margin-left: -200px;
+  width: 50px;
+  height: 400px;
+  text-indent: -9000px;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+.image:target .next:hover, .image:target .previous:hover
+{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.image:target .next:hover:before, .image:target .previous:hover:before
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  margin-top: -7px;
+  margin-left: -7px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  content: "";
+}
+.image:target .next
+{
+  margin-left: 150px;
+}
+.image:target .next:before
+{
+  border-left: 15px solid #555555;
+}
+.image:target .previous
+{
+  margin-left: -200px;
+}
+.image:target h2 {
+    top: 2em;
+    color:  #fff;
+    display: block;
+}
+.image:target .previous:before
+{
+  border-right: 15px solid #555555;
+}
+
+    
+    
+}
+
+.grid-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.toggle {
+  text-align: center;
+  padding: 0;
+  color: white;
+}
+
+.toggle li {
+  display: inline;
+  padding: 0 60px;
+}
+
+.toggle label {
+  font-size: 1.2em;
+  padding: 0 10px;
+}
+
+.grid {
+  margin: 0 auto;
+}
+
+.item {
+  color: white;
+  display: table;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 5px;
+  width: 270px;
+}
+
+.item:hover .title {
+  opacity: 1;
+}
+
+.title {
+  display: table-cell;
+  vertical-align: middle;
+  opacity: 0;
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+}
+
+.i1, .i3, .i6, .i7  {
+  background: #2ecc71;
+  height: 280px;
+}
+
+.i2, .i4, .i5, .i8 {
+  background: #e74c3c;
+  height: 180px;
+}
+
+.i9, .i10, .i11, .i12, .i13, .i14, .i15 {
+  background: #e74c3c;
+  height: 180px;
+}
+
+.i4 {
+  height: 349px;
+}
+
+.expand {
+  transition: width 0.5s, height 0.5s, left 0.5s, top 0.5s;
+  -webkit-transition: width 0.5s, height 0.5s, left 0.5s, top 0.5s;
+  height: 100%;
+  width: 100%;
+  left: 0 !important;
+  top: 0 !important;
+  z-index: 99;
+  text-indent: -9999px;
+}
+
+img.portrait {
+    display: block;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 6em;
+}
+    
+p.font {
+    margin: auto;
+    text-align: center;
+}
+
+article.about {
+    margin-bottom: 3em;
+    padding-top: 0em;
+
+}
+
+article.portfolio {
+    margin-bottom: 1.5em;
+    
+}
+
+</style>
